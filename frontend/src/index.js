@@ -16,7 +16,7 @@ import reportWebVitals from "./reportWebVitals";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index={true} path="/" element={<HomeScreen />} />
+      <Route index={true} element={<HomeScreen />} />
     </Route>
   )
 );
