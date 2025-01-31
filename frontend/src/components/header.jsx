@@ -18,7 +18,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/cart">
                 <FaShoppingCart /> Cart{" "}
                 {cartItems.length > 0 && (
                   <Badge pill bg="success" style={{ marginLeft: "5px" }}>
@@ -26,7 +26,7 @@ const Header = () => {
                   </Badge>
                 )}
               </Nav.Link>
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/login">
                 <FaUser /> Sign In{" "}
               </Nav.Link>
             </Nav>
