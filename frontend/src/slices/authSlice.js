@@ -12,7 +12,11 @@ const authSlice = createSlice({
   reducers: {
     setCredentials: (state, action) => {
       state.userInfo = action.payload;
-      localStorage.setITem("userInfo", JSON.stringify(action.payload));
+
+      //talk to backend login... /login-endpoint -- tack on payload of user and pw
+      // backend receives the data ---> cookie is like postage
+
+      localStorage.setItem("userInfo", JSON.stringify(action.payload));
     },
   },
 });
